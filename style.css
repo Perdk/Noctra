@@ -1,0 +1,67 @@
+/* CABEÇALHO */
+header {
+  display: flex;
+  justify-content: space-between;
+ }
+
+p {
+  font-size: 17px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav .navegacao ul, li {
+  display:flex; 
+  gap: 12px;
+}
+
+.botao-topo button {
+   margin-left: 20px;
+   padding: 8px;
+   border-radius: 3px;
+   cursor: pointer;
+/*    border-color:DEFIRNIR;
+   background-color:DEFINIR; */
+}
+
+/* SESSAO-APRESENTACAO */
+
+.apresentacao {
+  text-align: center;
+  margin: 5% auto;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  /*    border-color:DEFIRNIR;
+   background-color:DEFINIR; */
+}
+
+input[type="email"] {
+  padding: 5px;
+}
+
+.sessao-planos h2, .sessao-motivos h2 {
+  text-align: center;
+}
+
+.sessao-planos .planos {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 3%;
+   border: solid 1px;
+   margin: 5% auto;
+} 
+
+.sessao-motivos .motivos {
+  display: flex;
+  justify-content: space-between;
+}
