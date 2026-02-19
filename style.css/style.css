@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f0f14;
+  color: #f1f1f1;
+}
+
+
+/* CABEÇALHO */
+header {
+  display: flex;
+  justify-content: space-between;
+ }
+
+p {
+  font-size: 17px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav .navegacao ul, li {
+  display:flex; 
+  gap: 12px;
+}
+
+.botao-topo button {
+   margin-left: 20px;
+   padding: 8px;
+   border-radius: 3px;
+   cursor: pointer;
+/*    border-color:DEFIRNIR;
+   background-color:DEFINIR; */
+}
+
+/* SESSAO-APRESENTACAO */
+
+.apresentacao {
+  text-align: center;
+  margin: 5% auto;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  /*    border-color:DEFIRNIR;
+   background-color:DEFINIR; */
+}
+
+input[type="email"] {
+  padding: 5px;
+}
+
+/* SESSAO-PLANOS */
+
+.sessao-planos .planos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sessao-planos .planos > div {
+  background-color: #1c1c28;
+  border-radius: 10px;
+  padding: 25px;
+  width: 28%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* TÍTULO DO PLANO */
+.sessao-planos .planos h3 {
+  color: #7aa2ff;
+  margin-bottom: 15px;
+}
+
+/* TEXTO DO PLANO */
+.sessao-planos .planos p {
+  color: #d1d1e0;
+}
+
+/* HOVER DOS PLANOS */
+.sessao-planos .planos > div:hover {
+  background-color: #25253a;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(122, 162, 255, 0.3);
+}
+
+/* MOTIVOS */
+.sessao-motivos .motivos > div {
+  width: 50%;
+  margin-bottom: 15px;
+  background-color: #1c1c28;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sessao-motivos .motivos > div:hover {
+  background-color: #25253a;
+  transform: translateY(-5px);
+}
+
+/* PERGUNTAS */
+.lista-perguntas li{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.lista-perguntas button{
+    text-align: left;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(177, 175, 175);
+}
+
+/* ESTADO INICIAL DAS RESPOSTA */
+.resposta {
+  padding: 0;
+  max-height: 0;
+  margin: 10px;
+  overflow: hidden;
+  opacity: 0;
+  /* background-color:DEFINIR; */
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* A RESPOSTA COM CLASSE ATIVA, AUMENTA A OPACIDADE */
+.resposta.ativa {
+  max-height: 200px;
+  opacity: 1;
+  /* :background-color: aqua; MUDAR A COR */
+}
+
