@@ -6,7 +6,7 @@ listaPerguntas.forEach((li)=>{
     const resposta = li.querySelector('p');
 
     botao.addEventListener('click',()=>{
-        resposta.classList.toggle('ativa');
+        resposta.classList.toggle('ativa');;
     });
 });
 
