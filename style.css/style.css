@@ -4,13 +4,11 @@ body {
   background-color: #0f0f14;
   color: #f1f1f1;
 }
-
-
 /* CABEÇALHO */
 header {
   display: flex;
   justify-content: space-between;
- }
+}
 
 p {
   font-size: 17px;
@@ -24,37 +22,46 @@ nav a {
   text-decoration: none;
 }
 
-nav .navegacao ul, li {
-  display:flex; 
-  gap: 12px;
-}
-
 .botao-topo button {
-   margin-left: 20px;
-   padding: 8px;
-   border-radius: 3px;
-   cursor: pointer;
-/*    border-color:DEFIRNIR;
-   background-color:DEFINIRa; */
+  margin: 12px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #6161f0;
 }
 
-/* SESSAO-APRESENTACAOa */
+.botao-topo button:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(122, 162, 255, 0.3);
+}
+
+/* SESSAO-APRESENTACAO */
 
 .apresentacao {
   text-align: center;
   margin: 5% auto;
+  gap: 20px;
 }
 
 input[type="submit"] {
-  padding: 5px;
-  border-radius: 3px;
+  padding: 12px;
+  border-radius: 5px;
   cursor: pointer;
-  /*    border-color:DEFIRNIR;
-   background-color:DEFINIR; */
+  border: none;
+  background-color: #6161f0;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(122, 162, 255, 0.3);
 }
 
 input[type="email"] {
-  padding: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 20%;
 }
 
 /* SESSAO-PLANOS */
@@ -70,7 +77,10 @@ input[type="email"] {
   padding: 25px;
   width: 28%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
 /* TÍTULO DO PLANO */
@@ -92,13 +102,26 @@ input[type="email"] {
 }
 
 /* MOTIVOS */
+.sessao-motivos .motivos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sessao-motivos h2,
+.sessao-planos h2,
+.perguntas h2 {
+  margin-left: 2%;
+}
+
 .sessao-motivos .motivos > div {
-  width: 50%;
+  width: 28%;
   margin-bottom: 15px;
   background-color: #1c1c28;
   border-radius: 8px;
   padding: 20px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .sessao-motivos .motivos > div:hover {
@@ -107,35 +130,42 @@ input[type="email"] {
 }
 
 /* PERGUNTAS */
-.lista-perguntas li{
+.lista-perguntas li {
   display: flex;
   flex-direction: column;
   gap: 0px;
 }
 
-.lista-perguntas button{
-    text-align: left;
-    align-items: center;
-    width: 50%;
-    padding: 20px;
-    background-color: rgb(177, 175, 175);
+.lista-perguntas button {
+  text-align: left;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  background-color: rgb(177, 175, 175);
+  text-transform: uppercase;
+  font-size: 100%;
+  background-color: #181824;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* ESTADO INICIAL DAS RESPOSTA */
 .resposta {
   padding: 0;
   max-height: 0;
+  max-width: 50%;
   margin: 10px;
   overflow: hidden;
   opacity: 0;
-  /* background-color:DEFINIR; */
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
 }
 
 /* A RESPOSTA COM CLASSE ATIVA, AUMENTA A OPACIDADE */
 .resposta.ativa {
   max-height: 200px;
   opacity: 1;
-  /* :background-color: aqua; MUDAR A COR */
 }
-
